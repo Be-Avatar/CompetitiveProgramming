@@ -4,5 +4,6 @@ class Solution:
         if len(setNums) < 3:
             return max(nums)
         else:
-            leet = sorted(setNums)
-            return leet[len(leet)-3]
+            setNums.remove(max(setNums))
+            setNums.remove(max(setNums))
+            return max(setNums)
