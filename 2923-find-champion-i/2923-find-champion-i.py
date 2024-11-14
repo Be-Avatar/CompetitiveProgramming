@@ -3,4 +3,4 @@ class Solution:
         stk = []
         for i in grid:
             stk.append(sum(i))
-        return stk.index(max(stk))
+        return (stk.index(max(stk)))
